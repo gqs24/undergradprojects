@@ -71,7 +71,7 @@ st.plotly_chart(fig, use_container_width=True)
 
 st.subheader("Policy Outlook")
 st.write(f"Based on your inputs, the projected inflation rate is **{forecast:.2f}%**.")
-if forecast > 4.0:
+if forecast > 3.0:
     st.error("⚠️ Inflation Warning: Monitor potential cost-push pressures.")
 else:
     st.success("✅ Outlook: Inflation remains within manageable parameters.")
